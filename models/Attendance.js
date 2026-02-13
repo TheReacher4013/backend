@@ -5,6 +5,6 @@ const AttendanceSchema = mongoose.Schema({
     "Date":{type:Date,required:true},
     "CheckIn":{type:String},
     "CheckOut":{type: String}
-})
+},{timestamps:true});
 
 module.exports = mongoose.model("Attendance", AttendanceSchema)
