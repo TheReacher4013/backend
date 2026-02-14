@@ -20,8 +20,9 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING)
 app.use("/api/payroll", require("./routes/payrollRoutes"));
 app.use("/api/documents", require("./routes/documentRoutes"));
 app.use("/api/attendance", require("./routes/attendanceRoutes"));
-// app.use("/api/employees", require("./routes/employeeRoutes"));
-// app.use("/api/leaves", require("./routes/leaveRoutes"));
+app.use("/api/employees", require("./routes/employeeRoutes"));
+app.use("/api/leaves", require("./routes/leaveRoutes"));
+app.use("/api/auth", require("./routes/authRoutes"));
 
 app.use("/uploads", express.static("uploads"));
 

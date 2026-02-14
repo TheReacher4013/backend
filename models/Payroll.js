@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const PayrollSchema = mongoose.Schema({
+const PayrollSchema = new mongoose.Schema({
     Employeeid: { type: String, required: true },
     Month: { type: String, required: true },
     BaseSalary: { type: Number, required: true },
