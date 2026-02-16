@@ -13,7 +13,7 @@ exports.applyLeave = async (req, res)=>{
 //get All leaves.
 exports.getLeaves = async(req, res)=>{
     try{
-        const leaves = await leave.find();
+        const leaves = await Leave.find();
         res.json(leaves);
 
     }catch(err){

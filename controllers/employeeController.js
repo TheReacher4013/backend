@@ -52,7 +52,7 @@ exports.updateEmployee = async (req, res) => {
 exports.deleteEmployee = async (req, res) => {
     try {
         const emp = await Employee.findByIdAndDelete(req.params.id);
-        req.json({ msg: "Employee deleted" });
+        res.json({ msg: "Employee deleted" });
     } catch (err) {
         res.status(500).json({
             error: err.message

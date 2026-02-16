@@ -23,6 +23,12 @@ app.use("/api/attendance", require("./routes/attendanceRoutes"));
 app.use("/api/employees", require("./routes/employeeRoutes"));
 app.use("/api/leaves", require("./routes/leaveRoutes"));
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/award", require("./routes/awardRoutes"));
+app.use("/api/loan", require("./routes/loanRoutes"));
+app.use("/api/message", require("./routes/messageRoutes"));
+app.use("/api/notice", require ("./routes/noticeRoutes"));
+app.use("/api/department", require("./routes/departmentRoutes"));
+app.use("/api/candidate", require("./routes/candidateRoutes"));
 
 app.use("/uploads", express.static("uploads"));
 
